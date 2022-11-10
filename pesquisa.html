@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <h1 id="title">Quem é esse Pokémon?</h1>
+    <p id="description">Qual o Pokémon da imagem abaixo:</p>
+    <img src="https://pbs.twimg.com/media/EEYJiH3WsAAzOwG?format=jpg&name=small">
+    <p></p>
+    <form id="survey-form">
+
+        <label for="name" id="name-label">
+            Nome: </label>
+        <input type="text" id="name" REQUIRED placeholder="Insira um nome:"><br>
+        <p>
+            <label for="email" id="email-label">
+                Email: </label>
+            <input type="email" id="email" REQUIRED placeholder="Insira um email:"><br>
+        <p>
+            <label for="number" id="number-label">
+                Número: </label>
+            <input type="number" id="number" min="1" max="100" REQUIRED placeholder="Ex:1"><br>
+            <p></p>
+            <select name="selecao" id="dropdown">
+                <option value="0">
+                    Bulbassaur
+                </option>
+                <option value="1">
+                    Pikachu
+                </option>
+                <option value="2">
+                    Charmander
+                </option>
+                <option value="3">
+                    Squirtle
+                </option>
+
+                
+            </select>
+            <br>
+            <label>
+                <input type="radio" name="pokemon" value="1"> Pikachu
+            </label>
+            <label>
+                <input type="radio" name="pokemon" value="0"> Bulbassaur
+            </label>
+            <label>
+                <input type="radio" name="pokemon" value="2"> Charmander
+            </label>
+            <label>
+                <input type="radio" name="pokemon" value="3"> Squirtle
+            </label>
+            <br>            
+            <label>
+                <input type="checkbox" name="pokemon" value="01">
+                Charmeleon
+            </label>
+            <label>
+                <input type="checkbox" name="pokemon" value="02">
+                Wartortle
+            </label>
+            <label>
+                <input type="checkbox" name="pokemon" value="03">
+                Ivyssaur
+            </label>
+            <br>
+            <p></p>
+            <textarea id="comments" placeholder="Avalie nossa pesquisa..."></textarea>
+            <br>
+            <input type="submit" id="submit" value="Enviar">
+    </form>
+    <p>Dev: Kalebe Vasconcelos</p>
+</body>
+
+</html>
